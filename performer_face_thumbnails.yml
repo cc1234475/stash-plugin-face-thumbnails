@@ -1,0 +1,14 @@
+# example plugin config
+name: Face Thumbnails
+description: Make thumbnails for scene with performers faces
+version: 0.1
+url: https://github.com/com1234475/stash-plugin-face-thumbnails
+exec:
+ - venv/bin/python
+ - "{pluginDir}/performer_face_thumbnails.py"
+interface: raw
+tasks:
+  - name: Scan scenes for faces and create thumbnails
+    description: Scan scenes for faces and create thumbnails
+    defaultArgs:
+      mode: create
